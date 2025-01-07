@@ -1,6 +1,7 @@
 # BC_Nanopre_Tracker
 
-This project is a server-side application designed to manage data for a laboratory database. It uses Node.js, Express.js, and MySQL to provide endpoints for CRUD operations on various database tables.
+
+This project was developed as part of an academic initiative, where I took primary responsibility for designing and implementing the backend architecture and integrating the database. The goal was to create a scalable and efficient system for managing laboratory data, including experiments, runs, devices, and participants. Leveraging Node.js, Express.js, and MySQL, the backend delivers robust CRUD functionality and seamless database interactions. In this documentation, I will primarily focus on explaining the functionality and usage of the backend code.
 
 ## Features
 
@@ -56,7 +57,6 @@ project-root
     
     ```
     git clone <https://github.com/FrankRenN/BC_Nanopre_Tracker>
-    
     cd <repository-folder>
     ```
     
@@ -83,7 +83,6 @@ project-root
 
 1.  Start the server:
     
-    type this in your cmd line
     ```
     node app.js
     ```
@@ -166,6 +165,82 @@ Response:
   ...
 ]
 ```
+
+## File Information
+
+-   **File Name**: `labdatabase_localhost-2025_01_07_15_12_59-dump.sql`
+    
+-   **Database Type**: MySQL
+    
+-   **Purpose**: To provide a preconfigured schema and sample data for use with the Lab Database Management System.
+    
+
+## Tables Included
+
+1.  `**experiment**`: Stores information about experiments.
+    
+2.  `**run**`: Tracks individual runs of experiments.
+    
+3.  `**computer**`: Maintains a list of computers used in experiments.
+    
+4.  `**minion**`: Represents auxiliary devices or tools used in experiments.
+    
+5.  `**participant**`: Holds data on participants involved in experiments.
+    
+6.  **Additional tables as needed**: Includes related data for operations.
+    
+
+## How to Use
+
+### Prerequisites
+
+-   MySQL server installed and running.
+    
+-   Access to a database user with the required permissions to create databases and tables.
+    
+
+### Importing the Database
+
+1.  **Create a new database**:
+    
+    ```
+    CREATE DATABASE labdatabase;
+    ```
+    
+2.  **Import the SQL dump**:
+    
+    ```
+    mysql -u <username> -p labdatabase < labdatabase_localhost-2025_01_07_15_12_59-dump.sql
+    ```
+    
+3.  **Verify the data**:
+    
+    ```
+    USE labdatabase;
+    SHOW TABLES;
+    ```
+
+**Or you can use any other tools to import the sql file to the local database**
+
+## Database Schema Overview
+
+The database is structured to support operations like:
+
+-   **Experiment Management**: Create, update, and manage experiments.
+    
+-   **Run Tracking**: Log details for each run of an experiment.
+    
+-   **Device Integration**: Track computers and other devices used in the experiments.
+    
+-   **Participant Records**: Maintain participant involvement data.
+    
+
+## Notes
+
+-   Ensure that the database credentials in your application match those in the `.env` file or the database connection settings.
+    
+-   Backup your database before making changes to prevent data loss.
+    
 
 ## License
 
