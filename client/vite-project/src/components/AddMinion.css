@@ -1,0 +1,33 @@
+select, input[type="date"] {
+  width: 100%; 
+  padding: 10px; 
+  font-size: 16px; 
+  border-radius: 5px; 
+  border: 1px solid #ccc; 
+  box-sizing: border-box; 
+  margin-bottom: 10px; 
+}
+
+input, textarea {
+  width: 100%; 
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}

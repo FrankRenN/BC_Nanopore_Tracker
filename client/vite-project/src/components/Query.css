@@ -1,0 +1,136 @@
+.container {
+  font-family: Arial, sans-serif;
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.select {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.input {
+  padding: 8px;
+  font-size: 16px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Adjusted button styles for smaller width */
+.button, .pagination-button, .edit-button, .delete-button {
+  padding: 4px 8px; /* Decrease padding for smaller buttons */
+  font-size: 14px; /* Decrease font size */
+}
+
+.button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.error {
+  color: red;
+  margin-bottom: 20px;
+}
+
+.table-container {
+  overflow-x: auto;
+}
+
+.query-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.query-th {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  padding: 12px;
+}
+
+.query-td {
+  border: 1px solid #dee2e6;
+  padding: 12px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* Updated styles for pagination buttons */
+.pagination-button {
+    background-color: #007bff; /* Same as main button */
+    color: white; /* Text color */
+    border-radius:4px; /* Rounded corners */
+    transition-duration:.3s; /* Smooth transition on hover */
+}
+
+.pagination-button:hover {
+    background-color:#0056b3; /* Darker blue on hover */
+}
+
+.pagination-button:disabled {
+    background-color:#cccccc; /* Grey when disabled */
+    cursor:not-allowed; /* Change cursor when disabled */
+}
+
+/* Styles for edit and delete buttons */
+.edit-button, .delete-button {
+    padding:4px; /* Smaller padding for edit/delete buttons */
+    font-size:14px; /* Smaller font size for edit/delete buttons */
+    border:none; /* No border */
+    cursor:pointer; /* Pointer on hover */
+    border-radius:4px; /* Rounded corners */
+    transition:.3s; /* Smooth transition on hover */
+    margin-right:.5rem; /* Space between buttons */
+}
+
+.edit-button {
+    background-color:#28a745; /* Green for edit button */
+    color:white; /* White text color */
+}
+
+.edit-button:hover {
+    background-color:#218838; /* Darker green on hover */
+}
+
+.delete-button {
+    background-color:#dc3545; /* Red for delete button */
+    color:white; /* White text color */
+}
+
+.delete-button:hover {
+    background-color:#c82333; /* Darker red on hover */
+}

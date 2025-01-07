@@ -1,0 +1,49 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  height: 100vh; /* Full height of the viewport */
+  position: relative;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.select-message {
+  position: absolute;
+  top: 25%; /* Move the message slightly higher */
+  left: 20px;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: red;
+  font-weight: bold;
+}
+
+.button-container {
+  position: absolute;
+  top: 32%; /* Move the buttons closer to the message */
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.black-button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.black-button:hover {
+  background-color: #555;
+}

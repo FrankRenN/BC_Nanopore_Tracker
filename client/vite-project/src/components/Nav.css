@@ -1,0 +1,60 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-header {
+  width: 100%;
+  background-color: #27272a;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  height: 56px; /* Height of the navbar */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between brand and links */
+  padding: 0 16px; /* Padding on left and right */
+}
+
+.nav-brand {
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center items vertically */
+  font-size: 1.25rem; /* Font size for title */
+  font-weight: bold; /* Bold title */
+  text-decoration: none; /* Remove underline from link */
+  color: rgb(190, 102, 102); /* Title color */
+}
+
+.nav-logo {
+  width: 50px; /* Adjusted width for logo */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 80px; /* Ensure it doesn't exceed navbar height */
+  object-fit: contain; /* Maintain aspect ratio */
+  margin-right: 10px; /* Space between logo and text */
+}
+
+.nav-links {
+  display: flex; /* Flexbox for link buttons */
+  gap: 24px; /* Space between buttons */
+}
+
+.nav-link {
+  text-decoration: none; /* Remove underline from link */
+  color: white; /* Link color */
+  transition: color 0.3s ease; /* Transition effect on hover */
+  background: none; /* No background for button */
+  border: none; /* No border for button */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.nav-link:hover {
+  color: #d4d4d8; /* Change color on hover */
+}
