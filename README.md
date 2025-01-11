@@ -1,4 +1,4 @@
-# BC_Nanopre_Tracker
+# BC_Nanopore_Tracker
 
 
 This project was developed as part of an academic initiative, where I took primary responsibility for designing and implementing the backend architecture and integrating the database. The goal was to create a scalable and efficient system for managing laboratory data, including experiments, runs, devices, and participants. Leveraging Node.js, Express.js, and MySQL, the backend delivers robust CRUD functionality and seamless database interactions. In this documentation, I will primarily focus on explaining the functionality and usage of the backend code.
